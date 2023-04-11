@@ -1,4 +1,5 @@
 #!/bin/bash
-gnome-terminal --tab --command "cd ~/I7565H1H2_Linux_Library" --command "sudo ./I7565H1H2_install"
+gnome-terminal -t "Install Driver" --working-directory=/home/user/I7565H1H2_Linux_Library -e './I7565H1H2_install'
 sleep 1
-gnome-terminal --command "sudo chmod 777 /dev/ttyUSB0" --command "sudo chmod 777 /dev/ttyUSB1"
+gnome-terminal -t "Give Permission" -x bash -c 'chmod 777 /dev/ttyUSB0;chmod 777 /dev/ttyUSB1'
+sleep 1
