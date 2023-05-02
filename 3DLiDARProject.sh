@@ -16,7 +16,7 @@ gnome-terminal -t "Navigation" -x bash -c 'source ~/common_ws/devel/setup.bash;r
 sleep 1
 
 # Realsense Up Down
-gnome-terminal -t "Realsense" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch apriltag_ros Camera_Up_Down.launch'
+gnome-terminal -t "Realsense" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch realsense2_camera LiDAR_2xD455_1xD435.launch'
 sleep 1
 
 # AprilTag Up
