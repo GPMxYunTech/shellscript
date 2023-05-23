@@ -16,26 +16,26 @@ gnome-terminal -t "Navigation" -x bash -c 'source ~/common_ws/devel/setup.bash;r
 sleep 1
 
 # Realsense Up Down
-gnome-terminal -t "Realsense" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch realsense2_camera LiDAR_2xD455_1xD435.launch'
+gnome-terminal -t "Realsense" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch realsense2_camera LiDAR_meteor_2xD435.launch'
 sleep 1
 
 # AprilTag Up
-gnome-terminal -t "AprilTag Up" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch apriltag_ros up_continuous_detection.launch'
+gnome-terminal -t "AprilTag Up" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch apriltag_ros Meteor_up_continuous_detection.launch'
 sleep 1
 
 # AprilTag Down
-gnome-terminal -t "AprilTag Down" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch apriltag_ros down_continuous_detection.launch'
+gnome-terminal -t "AprilTag Down" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch apriltag_ros Meteor_down_continuous_detection.launch'
 sleep 1
 
 # PBVS Server
-gnome-terminal -t "PBVS Server" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch forklift_server PBVS_server.launch'
+gnome-terminal -t "PBVS Server" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch forklift_server PBVS_server_meteorcar.launch'
 sleep 1
 
 # Topology Map 
-gnome-terminal -t "Topology Map" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch forklift_server Topology_map.launch;LD4'
+gnome-terminal -t "Topology Map" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch forklift_server Topology_map_meteorcar.launch;LD4'
 sleep 1
 
 # Control Server
-gnome-terminal -t "Control Server" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch forklift_server ctrl_server.launch'
+gnome-terminal -t "Control Server" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch forklift_server ctrl_server_meteorcar.launch'
 
 
