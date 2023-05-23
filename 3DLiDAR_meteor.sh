@@ -12,7 +12,7 @@ gnome-terminal -t "Localization" -x bash -c 'source ~/3dlidar_ws/devel/setup.bas
 sleep 1
 
 # Navigation
-gnome-terminal -t "Navigation" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch car_controller navigation_3DLiDAR.launch'
+gnome-terminal -t "Navigation" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch car_controller Meteor_navigation_3DLiDAR.launch'
 sleep 1
 
 # Realsense Up Down
