@@ -5,7 +5,7 @@ gnome-terminal -t "3D-LiDAR Driver" -x bash -c 'source ~/3dlidar_ws/devel/setup.
 sleep 1
 
 # Realsense 
-gnome-terminal -t "Realsense" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch realsense2_camera Visual_2xD455_1xD435.launch'
+gnome-terminal -t "Realsense" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch realsense2_camera Visual_2xD455.launch'
 sleep 1
 
 # Localization
@@ -34,6 +34,10 @@ sleep 1
 
 # Topology Map 
 gnome-terminal -t "Topology Map" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch forklift_server Topology_map_visual.launch;LD4'
+sleep 1
+
+# Realsense 
+gnome-terminal -t "Realsense" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch realsense2_camera Visual_1xD435.launch'
 sleep 1
 
 # Control Server
