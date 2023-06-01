@@ -74,7 +74,7 @@ class ScriptExecutor():
 
         self.button3 = tk.Button(
             self.window, 
-            text="Anti-Rollover Monitoring", 
+            text="Hybrid Fuzzy-Fuzzy Stability Control of Anti-Rollover", 
             font=("Times New Romen", 20, "bold"), 
             command=self.execute_script_3)
         self.button3.pack()
