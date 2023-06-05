@@ -23,6 +23,8 @@ sleep 1
 gnome-terminal -t "Realsense" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch realsense2_camera LiDAR_1xD435.launch'
 sleep 1
 
+
+
 # AprilTag Up
 gnome-terminal -t "AprilTag Up" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch apriltag_ros up_continuous_detection.launch'
 sleep 1
@@ -36,10 +38,10 @@ gnome-terminal -t "PBVS Server" -x bash -c 'source ~/common_ws/devel/setup.bash;
 sleep 1
 
 # Topology Map 
-gnome-terminal -t "Topology Map" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch forklift_server Topology_map.launch;LD4'
+gnome-terminal -t "Topology Map" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch forklift_server Topology_map_lidardemo.launch'
 sleep 1
 
 # Control Server
-gnome-terminal -t "Control Server" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch forklift_server ctrl_server.launch'
+gnome-terminal -t "Control Server" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch forklift_server ctrl_server_lidardemo.launch'
 
 
