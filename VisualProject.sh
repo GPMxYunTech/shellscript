@@ -5,7 +5,11 @@ gnome-terminal -t "3D-LiDAR Driver" -x bash -c 'source ~/3dlidar_ws/devel/setup.
 sleep 1
 
 # Realsense 
-gnome-terminal -t "Realsense" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch realsense2_camera Visual_2xD455.launch'
+gnome-terminal -t "Realsense" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch realsense2_camera Visual_1xD455_Front.launch'
+sleep 1
+
+# Realsense 
+gnome-terminal -t "Realsense" -x bash -c 'source ~/common_ws/devel/setup.bash;roslaunch realsense2_camera Visual_1xD455_Up.launch'
 sleep 1
 
 # Localization
